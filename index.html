@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>KALKULATOR KU</h1>
+            <ul>
+                <li><a href="#">luas 🔺</a></li>
+                <li><a href="index1.html">Keliling 🔺</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Luas Segitiga :</h2>
+        <article class="segitiga">
+            <img src="image/luas.png">
+            <div class="keterangan">
+                <h3>Rumus = 1/2 x alas x tinggi</h3>
+                <h3>Keterangan</h3>
+                <p>b = alas</p>
+                <p>t = tinggi</p>
+            </div>
+        </article>
+
+        <main>
+            <h2>Hitung luas Segitiga Kamu :</h2>
+            <article class="hitungan">
+                <input type="text" id="alas" placeholder="masukin panjang alas dalam cm">
+                <input type="text" name="masukin tinggi" id="tinggi" placeholder="masukin panjang tinggi dalam cm">
+                <p id="luas"></p>
+                <button onclick="ngitungLuas()">hasil</button>
+            </article>
+        </main>
+    </div>
+    <div class="btn">
+        <button onclick="refresh()" id="btnRefresh">Refresh</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

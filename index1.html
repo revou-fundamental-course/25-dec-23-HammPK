@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>KALKULATOR KU</h1>
+            <ul>
+                <li><a href="index.html">luas 🔺</a></li>
+                <li><a href="#">Keliling 🔺</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Keliling Segitiga :</h2>
+        <article class="segitiga">
+            <img src="image/keliling.png">
+            <div class="keterangan">
+                <h3>Rumus K = a + a + b</h3>
+                <h3>Keterangan :</h3>
+                <p>a dan b = sisi dari segitiga</p>
+                <p>dan K adalah Keliling</p>
+            </div>
+        </article>
+
+        <main>
+            <h2>Hitung Keliling Segitiga Kamu :</h2>
+            <article class="hitungan">
+                <input type="text" id="sisi1" placeholder="masukin panjang sisi1 dalam cm">
+                <input type="text" id="sisi2" placeholder="masukin panjang sisi2 dalam cm">
+                <input type="text" id="sisi3" placeholder="masukin panjang sisi3 dalam cm">
+                <p id="keliling"></p>
+                <button onclick="ngitungKeliling()">hasil</button>
+            </article>
+        </main>
+    </div>
+    <div class="btn">
+        <button onclick="refresh()" id="btnRefresh">Refresh</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
