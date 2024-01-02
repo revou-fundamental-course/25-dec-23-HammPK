@@ -1,29 +1,29 @@
 // function 1
-function ngitungLuas(){
-    let alas = document.getElementById("alas").value;
-    let tinggi = document.getElementById("tinggi").value;
-    const luas =  (1/2 * parseFloat(alas) ) * (parseFloat(tinggi))
-    if(!isNaN(luas)){
-    document.getElementById("luas").innerHTML = (`Luas segitiga kamu adalah ${luas} cm^2`);
+function countWide(){
+    let base = document.getElementById("base").value;
+    let height = document.getElementById("height").value;
+    const wideAreas =  (1/2 * parseFloat(base) ) * (parseFloat(height))
+    if(!isNaN(wideAreas)){
+    document.getElementById("countWide").innerHTML = (`Luas segitiga kamu adalah ${wideAreas} cm^2`);
     } else {
-        document.getElementById("luas").innerHTML = ("masukin angkanya ajah pak")
+        document.getElementById("countWide").innerHTML = ("masukin angkanya ajah pak")
     }
-    const hasilLuas = document.getElementById('luas');
-    hasilLuas.classList.add('hasilLuas')
+    const wides = document.getElementById('countWide');
+    wides.classList.add('wide')
 }
 // funcion 2
-function ngitungKeliling(){
-    let sisi1 = document.getElementById('sisi1').value;
-    let sisi2 = document.getElementById('sisi2').value;
-    let sisi3 = document.getElementById('sisi3').value;
-    const sum = (parseFloat(sisi1) + parseFloat(sisi2)) + parseFloat(sisi3);
-    if(!isNaN(sum)){
-        document.getElementById('keliling').innerHTML = (`Keliling segitiga kamu adalah ${sum} cm`)
+function countCircumFerence(){
+    let side1 = document.getElementById('side1').value;
+    let side2 = document.getElementById('side2').value;
+    let side3 = document.getElementById('side3').value;
+    const sumOfAllSide = (parseFloat(side1) + parseFloat(side2)) + parseFloat(side3);
+    if(!isNaN(sumOfAllSide)){
+        document.getElementById('circumference').innerHTML = (`Keliling segitiga kamu adalah ${sumOfAllSide} cm`)
     } else {
-        document.getElementById('keliling').innerHTML = ("angka nya ajah pak")
+        document.getElementById('circumference').innerHTML = ("angka nya ajah pak")
     }
-    const hasilKeliling = document.getElementById('keliling');
-    hasilKeliling.classList.add('hasilKeliling');
+    const sumStyle = document.getElementById('circumference');
+    sumStyle.classList.add('circumference');
 }
 // refresh function
 function refresh(){

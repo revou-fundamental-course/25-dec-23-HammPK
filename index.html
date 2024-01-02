@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <nav>
             <h1>KALKULATOR KU</h1>
@@ -18,11 +19,13 @@
             </ul>
         </nav>
     </header>
+
+    <!-- main -->
     <div class="container">
         <h2>Luas Segitiga :</h2>
-        <article class="segitiga">
+        <article class="triangle">
             <img src="assets/image/luas.png">
-            <div class="keterangan">
+            <div class="information">
                 <h3>Rumus = 1/2 x alas x tinggi</h3>
                 <h3>Keterangan</h3>
                 <p>b = alas</p>
@@ -32,17 +35,26 @@
 
         <main>
             <h2>Hitung luas Segitiga Kamu :</h2>
-            <article class="hitungan">
-                <input type="text" id="alas" placeholder="masukin panjang alas dalam cm">
-                <input type="text" name="masukin tinggi" id="tinggi" placeholder="masukin panjang tinggi dalam cm">
-                <p id="luas"></p>
-                <button onclick="ngitungLuas()">hasil</button>
+            <article class="count">
+                <input type="text" id="base" placeholder="masukin panjang alas dalam cm">
+                <input type="text" id="height" placeholder="masukin panjang tinggi dalam cm">
+                <p id="countWide"></p>
+                <button onclick="countWide()">hasil</button>
             </article>
+            <div class="btn">
+                <button onclick="refresh()" id="btnRefresh">Refresh</button>
+            </div>
         </main>
     </div>
-    <div class="btn">
-        <button onclick="refresh()" id="btnRefresh">Refresh</button>
-    </div>
+    
+    <!-- footer -->
+    <footer>
+        <div class="information">
+            <p>pembuat : Ilham Putra Kurniawan</p>
+            <p>Sosmed : ig @ilham_learn</p>
+            <p>contact : 0882-3977-9537</p>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 

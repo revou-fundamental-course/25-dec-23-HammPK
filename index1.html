@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <nav>
             <h1>KALKULATOR KU</h1>
@@ -18,11 +19,13 @@
             </ul>
         </nav>
     </header>
+
+    <!-- main -->
     <div class="container">
         <h2>Keliling Segitiga :</h2>
-        <article class="segitiga">
+        <article class="triangle">
             <img src="assets/image/keliling.png">
-            <div class="keterangan">
+            <div class="information">
                 <h3>Rumus K = a + a + b</h3>
                 <h3>Keterangan :</h3>
                 <p>a dan b = sisi dari segitiga</p>
@@ -32,18 +35,28 @@
 
         <main>
             <h2>Hitung Keliling Segitiga Kamu :</h2>
-            <article class="hitungan">
-                <input type="text" id="sisi1" placeholder="masukin panjang sisi1 dalam cm">
-                <input type="text" id="sisi2" placeholder="masukin panjang sisi2 dalam cm">
-                <input type="text" id="sisi3" placeholder="masukin panjang sisi3 dalam cm">
-                <p id="keliling"></p>
-                <button onclick="ngitungKeliling()">hasil</button>
+            <article class="count">
+                <input type="text" id="side1" placeholder="masukin panjang sisi1 dalam cm">
+                <input type="text" id="side2" placeholder="masukin panjang sisi2 dalam cm">
+                <input type="text" id="side3" placeholder="masukin panjang sisi3 dalam cm">
+                <p id="circumference"></p>
+                <button onclick="countCircumFerence()">hasil</button>
             </article>
+            <div class="btn">
+                <button onclick="refresh()" id="btnRefresh">Refresh</button>
+            </div>
         </main>
     </div>
-    <div class="btn">
-        <button onclick="refresh()" id="btnRefresh">Refresh</button>
-    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="information">
+            <p>pembuat : Ilham Putra Kurniawan</p>
+            <p>Sosmed : ig @ilham_learn</p>
+            <p>contact : 0882-3977-9537</p>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
 
